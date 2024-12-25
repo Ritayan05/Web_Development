@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* element selector */
+        div{
+            /* background-color: red; */
+        }
+        /* class selector
+        .red means class is red */
+        .red{
+            background-color: red;
+        }
+        /* ID selector
+        #green means id is green*/
+        #green{
+            background-color: blue;
+        }
+        /*child selector*/
+        div > p{
+            color: rgb(68, 195, 115);
+            background-color: brown;
+        }
+        /*descendant selector*/
+        div p{
+            color: rgb(166, 166, 214);
+            background-color: brown;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="red">
+        I am a div
+        <p>I am para within div</p>
+    </div>
+    <div>
+        I am another div
+        <article>
+        <p>I am para within div</p>
+        </article>
+    </div>
+    <div id="green">
+        Hi new div
+        <p>I am para within div</p>
+    </div>
+</body>
+</html>

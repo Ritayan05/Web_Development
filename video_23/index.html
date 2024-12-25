@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display Property</title>
+    <style>
+      .box {
+        border: 2px solid blue;
+        display: inline-block;/*so now div became inline element */
+        padding: 20px;
+        margin: 20px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box ">I am a box</div>
+    <div class="box">Merry christmas</div>
+    <!-- //div is block element so meery chirtmas came in new line -->
+    <span>I am</span>
+    <span>good boy</span>
+    <!-- span is inline element so both lines comes in 1 single line -->
+  </body>
+</html>
