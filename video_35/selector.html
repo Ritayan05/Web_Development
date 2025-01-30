@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORE ON Selectors</title>
+    <style>
+        .box:first-child{
+              /* mean box ka parent ka first child   */
+            background-color: red;
+        }
+        .box::first-line{ 
+            color: yellow;
+        }
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+        } */
+         .box:nth-child(even){
+            background-color: blue;
+         }
+         .boxes::before{
+            content: "Harry";
+         }
+         ::selection{
+            background-color: chartreuse;
+            color: blue;
+            /* make selected portions bg green */
+         }
+         input::placeholder{
+            color: green;
+            font-size: 15px;
+         }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sunt praesentium repellendus suscipit sequi vero repudiandae ad ab eum. Tempora?</div>
+        <div class="box">I am a box</div>
+        <div class="box">I am a box</div>
+        <input type="text"placeholder="Type your text here">
+    </div>
+</body>
+</html>
